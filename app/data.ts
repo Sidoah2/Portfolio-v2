@@ -214,6 +214,29 @@ export const WEB_PROJECTS: Project[] = [
 ];
 
 export const PROJECTS: Project[] = [
+    {
+        title: "Safir – Discover. Book. Experience.",
+        slug: "safir",
+        desc: "A multi-role travel marketplace connecting users, travel agencies, restaurants, hotels, and event organizers in one scalable ecosystem.",
+        longDesc: "Safir is a production-level travel marketplace designed to handle multiple stakeholder roles simultaneously. Managing this project involved designing a scalable architecture for multi-role systems, building dynamic listing systems, and ensuring high performance across iOS and Android. It showcases my ability to architect complex systems and deliver clean, modern UI while integrating robust backend logic.",
+        tech: ["Flutter", "Dart", "Firebase", "Role-Based Access", "Scalable Architecture"],
+        tag: "Mobile Development",
+        link: "#",
+        image: "/assets/images/Full View_01.png",
+        gallery: [
+
+            "/assets/images/Frame 7509.png"
+        ],
+        features: [
+            "Multi-Role System (User, Agency, Restaurant, Hotel, Event Organizer)",
+            "35+ professionally designed screens",
+            "Dynamic offer and listing system",
+            "Scalable architecture for high-growth ecosystems",
+            "Cross-platform performance (iOS & Android)",
+            "Role-based access control and production-ready structure"
+        ],
+        date: "2026"
+    },
     ...WEB_PROJECTS,
     ...DATA_PROJECTS,
     {
