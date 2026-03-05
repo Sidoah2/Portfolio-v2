@@ -51,7 +51,7 @@ export const SKILLS_CATEGORIES = [
             { name: "Pivot Tables", icon: FaDatabase },
             { name: "Dashboards", icon: FaPalette },
             { name: "Data Visualization", icon: FaPalette },
-            { name: "Python (Analysis)", icon: FaCode }
+            { name: "SQL", icon: SiMysql }
         ]
     }
 ];
@@ -60,7 +60,7 @@ export const SKILLS = [
     { name: "Mobile Development", icon: FaMobile, desc: "Expert Flutter & Dart development for iOS/Android" },
     { name: "Backend Systems", icon: FaServer, desc: "Node.js, Express.js, RESTful APIs" },
     { name: "Database Management", icon: FaDatabase, desc: "MongoDB, MySQL, SQLite, Firebase" },
-    { name: "Data Analysis", icon: FaDatabase, desc: "Excel, Pivot Tables, Power BI, Python" },
+    { name: "Data Analysis", icon: FaDatabase, desc: "Excel, Pivot Tables, Power BI, SQL" },
     { name: "AI Integration", icon: FaRobot, desc: "OpenAI API, ML Model integration" },
     { name: "UI/UX Design", icon: FaPalette, desc: "Modern interfaces, Animations, State Management" },
     { name: "Web Technologies", icon: FaCode, desc: "React, Next.js, HTML, CSS, JavaScript" },
@@ -86,7 +86,7 @@ export const DOMAINS = [
         title: "Data Analysis",
         icon: FaDatabase,
         desc: "Transforming raw data into actionable insights. Expert in data cleaning, statistical analysis, and creating interactive dashboards that tell a story and drive decision-making.",
-        tools: ["Excel", "Power BI", "Python", "SQL", "Pivot Tables"]
+        tools: ["Excel", "Power BI", "SQL", "Pivot Tables"]
     }
 ];
 
