@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 const navLinks = [
     { name: "Home", to: "hero" },
     { name: "Skills", to: "skills" },
-    { name: "Projects", to: "projects" },
+    { name: "Work", to: "work" },
     { name: "Experience", to: "experience" },
-    { name: "Testimonials", to: "testimonials" },
+    { name: "Contact", to: "contact" },
 ];
 
 export default function Navbar() {

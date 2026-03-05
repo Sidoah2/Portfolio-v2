@@ -2,9 +2,23 @@
 import { FaMobile, FaDatabase, FaPalette, FaRobot, FaServer, FaCode } from 'react-icons/fa';
 import { SiFlutter, SiDart, SiExpress, SiNodedotjs, SiMongodb, SiMysql, SiSqlite, SiFirebase, SiOpenai, SiJavascript, SiHtml5, SiCss3 } from 'react-icons/si';
 
+export interface Project {
+    title: string;
+    slug: string;
+    desc: string;
+    longDesc?: string;
+    tech: string[];
+    tag: string;
+    link: string;
+    image: string;
+    gallery?: string[];
+    features?: string[];
+    date?: string;
+}
+
 export const PERSONAL_INFO = {
     name: "Ahmed Bouacheri",
-    title: "Full Stack Mobile Developer | AI Specialist",
+    title: "Full Stack Mobile Developer | AI Specialist | Data Analyst",
     bio: "Mobile developer specialized in Flutter and Express.js with experience in MongoDB, MySQL, and SQLite. I create intuitive, efficient, and user-focused mobile and web applications, integrating custom UI/UX designs, backend APIs, and even AI/ML features when needed.",
     email: "a.bouacheri@esi-sba.dz",
     socials: {
@@ -15,14 +29,72 @@ export const PERSONAL_INFO = {
     }
 };
 
+export const SKILLS_CATEGORIES = [
+    {
+        name: "Development",
+        skills: [
+            { name: "Flutter", icon: SiFlutter },
+            { name: "Dart", icon: SiDart },
+            { name: "Express.js", icon: SiExpress },
+            { name: "Node.js", icon: SiNodedotjs },
+            { name: "MongoDB", icon: SiMongodb },
+            { name: "MySQL", icon: SiMysql },
+            { name: "REST APIs", icon: FaServer }
+        ]
+    },
+    {
+        name: "Data Analysis",
+        skills: [
+            { name: "Excel", icon: FaDatabase },
+            { name: "Power BI", icon: FaPalette },
+            { name: "Data Cleaning", icon: FaDatabase },
+            { name: "Pivot Tables", icon: FaDatabase },
+            { name: "Dashboards", icon: FaPalette },
+            { name: "Data Visualization", icon: FaPalette },
+            { name: "Python (Analysis)", icon: FaCode }
+        ]
+    }
+];
+
 export const SKILLS = [
     { name: "Mobile Development", icon: FaMobile, desc: "Expert Flutter & Dart development for iOS/Android" },
     { name: "Backend Systems", icon: FaServer, desc: "Node.js, Express.js, RESTful APIs" },
     { name: "Database Management", icon: FaDatabase, desc: "MongoDB, MySQL, SQLite, Firebase" },
+    { name: "Data Analysis", icon: FaDatabase, desc: "Excel, Pivot Tables, Power BI, Python" },
     { name: "AI Integration", icon: FaRobot, desc: "OpenAI API, ML Model integration" },
     { name: "UI/UX Design", icon: FaPalette, desc: "Modern interfaces, Animations, State Management" },
     { name: "Web Technologies", icon: FaCode, desc: "React, Next.js, HTML, CSS, JavaScript" },
 ];
+
+export const DOMAINS = [
+    {
+        id: "mobile",
+        title: "Mobile App Development",
+        icon: FaMobile,
+        desc: "Creating high-performance, native-like experiences for iOS and Android using Flutter. Specialized in complex state management, custom UI, and seamless API integration.",
+        tools: ["Flutter", "Dart", "Firebase", "GetX", "SQLite"]
+    },
+    {
+        id: "web",
+        title: "Web Development",
+        icon: FaCode,
+        desc: "Building modern, responsive web applications with React and Next.js. Focused on performance, SEO, and creating premium user interfaces with tools like Tailwind CSS and Framer Motion.",
+        tools: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Express.js"]
+    },
+    {
+        id: "data",
+        title: "Data Analysis",
+        icon: FaDatabase,
+        desc: "Transforming raw data into actionable insights. Expert in data cleaning, statistical analysis, and creating interactive dashboards that tell a story and drive decision-making.",
+        tools: ["Excel", "Power BI", "Python", "SQL", "Pivot Tables"]
+    }
+];
+
+export const FREELANCE_AVAILABILITY = {
+    status: "Available",
+    message: "I am currently open to freelance opportunities and full-time positions in development or data science.",
+    cta: "Hire Me"
+};
 
 export const TECH_STACK = [
     { name: "Flutter", icon: SiFlutter, color: "#02569B" },
@@ -89,7 +161,61 @@ export const EDUCATION = [
     }
 ];
 
-export const PROJECTS = [
+export const DATA_PROJECTS: Project[] = [
+    {
+        title: "Exploring Diabetes Risk Across Pregnancy Groups",
+        slug: "diabetes-risk-analysis",
+        desc: "Analyzing the hypothesis that women with multiple pregnancies are more likely to develop diabetes using the Pima Indians Diabetes Dataset.",
+        longDesc: "This project explores the hypothesis that women with multiple pregnancies face a higher risk of developing diabetes. Using the Pima Indians Diabetes Dataset, I performed extensive data cleaning, created pivot tables to analyze case contributions, and developed a comprehensive dashboard to visualize insights. The findings confirm a clear positive correlation between pregnancy count and diabetes probability, particularly in the 'Very High' pregnancy group.",
+        tech: ["Excel", "Pivot Tables", "Dashboard", "Healthcare Analytics"],
+        tag: "Data Analysis",
+        link: "#",
+        image: "/assets/data_analysis/diabetes_projects/dashboard.png",
+        gallery: [
+            "/assets/data_analysis/diabetes_projects/DataSet.png",
+            "/assets/data_analysis/diabetes_projects/Tables.png",
+            "/assets/data_analysis/diabetes_projects/Chart.png",
+            "/assets/data_analysis/diabetes_projects/Contrubuion.png"
+        ],
+        features: [
+            "Data Cleaning: Handled missing values and standardized formats",
+            "Grouped numerical columns (Age, BMI, Glucose, Insulin, etc.)",
+            "Pivot Table analysis for diabetic cases vs within-group risk",
+            "Visualized Grand Total vs Row Total perspectives",
+            "Insights on positive correlation: Higher pregnancies -> higher risk"
+        ],
+        date: "2026"
+    }
+];
+
+export const WEB_PROJECTS: Project[] = [
+    {
+        title: "Personal Portfolio V2",
+        slug: "portfolio-v2",
+        desc: "A modern, high-performance portfolio built with Next.js, TypeScript, and Tailwind CSS to showcase my projects and skills.",
+        longDesc: "This portfolio website was designed to be fast, responsive, and visually stunning. It uses Next.js for server-side rendering and static site generation, Tailwind CSS for styling, and Framer Motion for smooth animations. The project demonstrates my ability to create premium web experiences with a focus on UI/UX and performance.",
+        tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+        tag: "Web Development",
+        link: "https://github.com/Sidoah2/portfolio-nextjs",
+        image: "/assets/web_dev/dev_web_1.png",
+        gallery: [
+            "/assets/web_dev/dev_web_2.png",
+            "/assets/web_dev/dev_web_3.png"
+        ],
+        features: [
+            "Responsive design for all devices",
+            "Smooth scroll and reveal animations",
+            "Dynamic project management with slug-based routing",
+            "Modern aesthetic with glassmorphism and gradients",
+            "Optimized performance and SEO"
+        ],
+        date: "2026"
+    }
+];
+
+export const PROJECTS: Project[] = [
+    ...WEB_PROJECTS,
+    ...DATA_PROJECTS,
     {
         title: "CloneMe - AI Powered Assistant",
         slug: "cloneme",

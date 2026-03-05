@@ -3,19 +3,21 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
-import Projects from "@/components/Projects";
+import DomainTabs from "@/components/DomainTabs";
 import Testimonials from "@/components/Testimonials";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-dark text-white overflow-hidden">
+    <main className="min-h-screen bg-dark text-white overflow-hidden scroll-smooth">
       <Navbar />
       <Hero />
       <Skills />
+      <DomainTabs />
       <Experience />
-      <Projects />
       <Testimonials />
+      <Contact />
       <Footer />
 
       {/* Scroll Progress Bar */}

@@ -107,10 +107,28 @@ export default async function ProjectDetail({ params }: Props) {
 
                         {/* If there's a detailed story/content */}
                         <div className="prose prose-invert max-w-none">
-                            <p className="text-gray-400">
+                            <p className="text-gray-400 mb-12">
                                 {project.longDesc || "No further details provided for this project."}
                             </p>
                         </div>
+
+                        {/* Image Gallery */}
+                        {project.gallery && project.gallery.length > 0 && (
+                            <div className="mt-16">
+                                <h2 className="text-3xl font-bold mb-8">Project Gallery</h2>
+                                <div className="grid grid-cols-1 gap-8">
+                                    {project.gallery.map((img: string, i: number) => (
+                                        <div key={i} className="rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                                            <ProjectCardImage
+                                                src={img}
+                                                title={`${project.title} - Screenshot ${i + 1}`}
+                                                className="w-full h-auto min-h-[300px]"
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>

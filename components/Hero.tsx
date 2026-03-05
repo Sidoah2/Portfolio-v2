@@ -52,15 +52,15 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="relative flex justify-center"
                 >
-                    <div className="w-80 h-80 md:w-[500px] md:h-[500px] relative rounded-full overflow-hidden border-4 border-white/10 shadow-2xl z-10">
-                        {/* Placeholder for Profile Image */}
-                        <div className="absolute inset-0 bg-gradient-to-tr from-gray-800 to-gray-900 flex items-center justify-center text-gray-600">
-                            <Image
-                                src="/assets/images/profil.png"
-                                alt="Profile"
-                                fill
-                                className="object-cover"
-                            />
+                    <div className="w-80 h-80 md:w-[500px] md:h-[500px] relative rounded-full overflow-hidden border-8 border-white/5 shadow-2xl z-10">
+                        {/* Yellow Placeholder for Profile */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 via-yellow-500 to-orange-500 flex items-center justify-center">
+                            <span className="text-dark text-9xl md:text-[180px] font-black tracking-tighter opacity-90 select-none">
+                                AB
+                            </span>
+
+                            {/* Inner Glow/Shadow for Depth */}
+                            <div className="absolute inset-0 shadow-[inset_0_0_100px_rgba(0,0,0,0.1)]" />
                         </div>
                     </div>
                     {/* Decorative Ring */}
