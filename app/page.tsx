@@ -1,6 +1,7 @@
 
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import DomainTabs from "@/components/DomainTabs";
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="min-h-screen bg-dark text-white overflow-hidden scroll-smooth">
       <Navbar />
       <Hero />
+      <About />
       <Skills />
       <DomainTabs />
       <Experience />

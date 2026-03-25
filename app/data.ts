@@ -19,7 +19,7 @@ export interface Project {
 export const PERSONAL_INFO = {
     name: "Ahmed Bouacheri",
     title: "Full Stack Mobile Developer | AI Specialist | Data Analyst",
-    bio: "Mobile developer specialized in Flutter and Express.js with experience in MongoDB, MySQL, and SQLite. I create intuitive, efficient, and user-focused mobile and web applications, integrating custom UI/UX designs, backend APIs, and even AI/ML features when needed.",
+    bio: "As an AI & Data Science Engineering student at ESI-SBA and a seasoned Mobile Developer, I bridge the gap between intelligent systems and high-end user experiences. With professional experience ranging from coaching mobile development at BrainerX to coordinating production-grade projects for agencies like Xrion, I specialize in the Flutter & Express.js ecosystem. My expertise extends to complex backend architectures (Node.js, MongoDB, SQL) and the integration of cutting-edge AI/ML models, ensuring every application I build is not only efficient but truly intelligent.",
     email: "a.bouacheri@esi-sba.dz",
     socials: {
         linkedin: "https://www.linkedin.com/in/ahmed-bouacheri-09819329b",
